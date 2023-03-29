@@ -1,0 +1,6 @@
+#https://www.hackerrank.com/challenges/text-processing-tr-2/problem?isFullScreen=true
+#!bin/bash
+while read lines 
+do
+    echo $lines | tr -d [:lower:]
+done

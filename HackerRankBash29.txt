@@ -1,0 +1,3 @@
+#https://www.hackerrank.com/challenges/text-processing-sort-4/problem?isFullScreen=true
+#!bin/baash
+sort -nr $1

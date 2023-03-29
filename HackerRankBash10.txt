@@ -1,0 +1,6 @@
+#https://www.hackerrank.com/challenges/text-processing-cut-2/problem?isFullScreen=true
+#!bin/bash
+while read lines;
+do 
+    echo $lines | cut -c 2,7;
+done

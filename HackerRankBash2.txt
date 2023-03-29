@@ -1,0 +1,6 @@
+#https://www.hackerrank.com/challenges/bash-tutorials---looping-and-skipping/problem?isFullScreen=true
+#!bin/bash
+for ((V=1; V<100; V+=2))
+do 
+    echo $V
+done

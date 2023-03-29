@@ -1,0 +1,8 @@
+#https://www.hackerrank.com/challenges/bash-tutorials---getting-started-with-conditionals/problem?isFullScreen=true
+#!bin/bash
+read letter
+if [ $letter == "Y" ] || [ $letter == "y" ]; then
+    echo "YES"
+elif [ $letter == "N" ] || [ $letter == "n" ]; then
+    echo "NO"
+fi

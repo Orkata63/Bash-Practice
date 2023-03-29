@@ -1,0 +1,5 @@
+#https://www.hackerrank.com/challenges/bash-tutorials---a-personalized-echo/problem?isFullScreen=true
+#!/bin/bash
+
+read name
+echo "Welcome" $name
