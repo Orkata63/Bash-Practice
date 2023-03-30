@@ -1,0 +1,5 @@
+#https://www.hackerrank.com/challenges/bash-tutorials---arithmetic-operations/problem?isFullScreen=true
+#!bin/bash
+read input
+echo "scale=4; $input" | bc | printf "%0.3f"  "$(cat)"
+# $(cat) takes the result of echo "scale=4; $input" | bc and feeds it into printf

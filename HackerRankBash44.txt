@@ -1,0 +1,3 @@
+#https://www.hackerrank.com/challenges/text-processing-in-linux-the-sed-command-3/problem?isFullScreen=true
+#!bin/bash
+cat $1 | sed -e "s/thy/{thy}/g" | sed -e "s/Thy/{Thy}/g"

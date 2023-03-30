@@ -1,0 +1,3 @@
+#https://www.hackerrank.com/challenges/text-processing-in-linux-the-sed-command-2/problem?isFullScreen=true
+#!bin/bash
+cat $1 | sed -e "s/[Tt][Hh][Yy]/your/g"

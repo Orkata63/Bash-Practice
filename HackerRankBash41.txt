@@ -1,0 +1,4 @@
+#https://www.hackerrank.com/challenges/bash-tutorials-count-the-number-of-elements-in-an-array/problem?isFullScreen=true
+#!bin/bash
+array=($(cat))
+echo ${#array[@]}

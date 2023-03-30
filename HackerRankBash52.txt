@@ -1,0 +1,3 @@
+#https://www.hackerrank.com/challenges/paste-3/problem?isFullScreen=true
+#!bin/bash
+paste -s -d"\t" $1

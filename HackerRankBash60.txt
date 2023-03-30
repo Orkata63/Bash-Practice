@@ -1,0 +1,4 @@
+#https://www.hackerrank.com/challenges/bash-tutorials-remove-the-first-capital-letter-from-each-array-element/problem?isFullScreen=true
+#!bin/bash
+array=($(cat $1))
+echo ${array[@]/[A-Z]/.}

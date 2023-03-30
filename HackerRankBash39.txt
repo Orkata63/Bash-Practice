@@ -1,0 +1,17 @@
+#https://www.hackerrank.com/challenges/bash-tutorials-concatenate-an-array-with-itself/problem?isFullScreen=true
+#!bin/bash
+i=0
+while read lines;
+do
+    array[i]=$lines
+    i=$((i+1))
+done
+array[i]=$lines
+#while loop ignores last line
+for j in {1..3}
+do
+    echo -n "${array[@]} " 
+done
+#option with cat that i read
+arr=($(cat))
+echo "${arr[@]} ${arr[@]} ${arr[@]}"

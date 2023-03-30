@@ -1,0 +1,12 @@
+#https://www.hackerrank.com/challenges/bash-tutorials---compute-the-average/problem?isFullScreen=true
+#!bin/bash
+array=($(cat $1))
+sum=0
+for i in ${array[@]}
+do
+    sum=$((sum + i))
+done
+sum=$((sum-array[0]))
+printValue=$(echo "scale=4; $sum/${array[0]}"| bc);
+printf "%.3f" $printValue
+#the first line is the number of elements so even tho we have it in the array we remove it at the end of the itteration process and devide by it, a test showed a error by 0.001 so scaled from 3 to 4 then formated back to "%.3f" to fix the issue

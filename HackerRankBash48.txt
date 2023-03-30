@@ -1,0 +1,4 @@
+#https://www.hackerrank.com/challenges/text-processing-in-linux-the-sed-command-1/problem?isFullScreen=true
+#!bin/bash
+cat $1 | sed "s/ the / this /1"
+#previously it was taking substrings with spaces it takes just the full words

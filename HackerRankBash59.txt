@@ -1,0 +1,4 @@
+#https://www.hackerrank.com/challenges/bash-tutorials-filter-an-array-with-patterns/problem?isFullScreen=true
+#!bin/bash
+array=($(cat $1))
+echo ${array[@]/*[aA]*/}

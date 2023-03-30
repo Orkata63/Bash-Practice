@@ -1,0 +1,13 @@
+#https://www.hackerrank.com/challenges/awk-3/problem?isFullScreen=true
+#!bin/bash
+awk '{ AVG=($2+$3+$4)/3 
+        if (AVG >= 80)
+            grade = "A"
+        else if (AVG >= 60)
+            grade = "B"
+        else if (AVG >= 50)
+            grade = "C"
+        else
+            grade = "FAIL"
+        print $0" : "grade
+    }' $1
